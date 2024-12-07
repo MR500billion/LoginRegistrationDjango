@@ -1,0 +1,33 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="{%static 'registerCss/register.css'%}">
+
+
+</head>
+<body>
+
+<div class="main-container">
+    <h1>Register</h1>
+    <form method="POST" >
+
+    {% csrf_token %} 
+    {{ form.as_p }} 
+    <div class="FormsContainer">  
+        <button class="btn" name='save' type="submit">Submit</button><br> 
+    </form>
+        <a href="/login" class="Muted">Already have an account? <span id="LoginSpan">Login</span></a> 
+    </div> 
+  
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
+

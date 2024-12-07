@@ -1,0 +1,29 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" type="text/css" href="{% static 'Logincss/login.css'%}">
+</head>
+<body>
+<div class="main-container">
+    <h1 class="Hang">Hanging man</h1>
+    <div class="inputPage">
+     <form method="POST" >
+
+    {% csrf_token %} 
+    {{ form.as_p }} 
+     <button id="Login" class="btn">Log in</button>
+    </form>
+     <button id="CreateAcc" class="btn"><a href="/register">Create account</a></button>
+    </div>
+    <p>Frontend and backend by Taofeeq isiaka </p>
+</div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

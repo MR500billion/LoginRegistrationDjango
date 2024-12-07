@@ -1,0 +1,85 @@
+body{
+
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-container{
+    background-color: white;
+    padding: 2em;
+    height: 37em;
+    width: 25em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+     border-radius: .5em;
+    
+
+    
+}
+input{
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    height: 2.5em;
+    padding-left: 1em;
+    gap: 10em;
+   
+    
+}
+
+.btn{
+    width: 10em;
+    height: 3em;
+    border: none;
+    background-color: cyan;
+    font-weight: bolder;
+    cursor: pointer;
+    margin-bottom: .5em;
+
+     
+
+}
+.Muted{
+    color: grey;
+    text-decoration: none;
+}
+.Muted:hover{
+    color: black;
+}
+#LoginSpan{
+
+    text-decoration: underline;
+}
+
+.btn:hover{
+  
+    -webkit-box-shadow: 10px 10px 34px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 34px -4px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 34px -4px rgba(0,0,0,0.75);
+}
+#Login{
+
+    background-color: white;
+    width: 10em;
+    height: 3em;
+    cursor: pointer;
+    border: 1px solid cyan;
+    
+
+
+  font-weight: bolder;  
+}
+
+
+#CreateAcc{
+
+    border: none;
+    background-color: cyan;
+    font-weight: bolder;
+ 
+}
